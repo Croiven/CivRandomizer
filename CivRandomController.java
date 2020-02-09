@@ -13,7 +13,8 @@ import java.util.Set;
 /**
  * @author Joonas
  * @version 3.3.2018
- *
+ * Ohjelma arpoo 1-8 pelaajalle kaksi kansaa Sid Meier's Civilization VI peliin.
+ * T‰m‰ tiedosto on javaFX:ll‰ toteutetun ohjelman controlleri.
  */
 public class CivRandomController {
 	
@@ -51,7 +52,7 @@ public class CivRandomController {
     	arvo();
     }
     
-    
+   
     private String[] kaikki = {"Teddy Roosevelt", "Saladin", "John Curtin","Montezuma","Pedro II","Qin Shi Huang","Poundmaker","Wilhelmina", "Cleopatra",
                                "Victoria", "Catherine de Medici","Tamar","Frederick Barbarossa","Pericles","Gorgo","Gandhi", "Chandragupta","Gitarja",
                                "Hojo Tokimune","Jayavarman VII","Mvemba a Nzinga","Seondeok","Alexander", "Lautaro","Genghis Khan","Harald Hardrada",
@@ -76,9 +77,10 @@ public class CivRandomController {
 	 */
 	public static final Random gen = new Random();  
 	/**
-	 * @param n .
-	 * @param maxRange .
-	 * @return .
+	 * Aliohjelma joka arpoo lukuja v‰lille 1-maxRange niin, ett‰ sama luku ei toistu. Kopioitu aliohjelma.
+	 * @param n on m‰‰r‰ montako arvotaan.
+	 * @param maxRange maksimi arvolle.
+	 * @return palauttaa taulukon arvottuja lukuja.
 	 */
 	public static int[] printRandomNumbers(int n, int maxRange) {  
 	    assert n <= maxRange : "cannot get more unique numbers than the size of the range";  
@@ -99,7 +101,7 @@ public class CivRandomController {
 	}  
 	
 	/**
-	 * 
+	 * Arpoo kaikista pelin kansoista.
 	 */
 	public void arvontaKaikki() {  
 	    int v = 0;  
@@ -112,7 +114,7 @@ public class CivRandomController {
 	}
 	
 	/**
-	 * 
+	 * Arpoo ainoastaan Rise and Fall lis‰osan kansoista.
 	 */
 	public void arvontaRF() {  
 	    int t = 0;  
@@ -125,7 +127,10 @@ public class CivRandomController {
 	}
     
     
-    
+    /**
+     * Aliohjelma suorittaa toiminnat kun painetaan "arvo" nappia.
+     * Sis‰lt‰‰ tulostuksen.
+     */
     private void arvo() {
     	arvontaKaikki();
     	arvontaRF();

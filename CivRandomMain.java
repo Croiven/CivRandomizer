@@ -10,9 +10,13 @@ import javafx.fxml.FXMLLoader;
 /**
  * @author Joonas
  * @version 3.3.2018
- *
+ * P‰‰ohjelma ohjelmalle joka arpoo 1-8 pelaajalle kaksi kansaa Sid Meier's Civilization VI peliin.
  */
 public class CivRandomMain extends Application {
+	
+	/**
+	 * K‰ynnistys
+	 */
     @Override
     public void start(Stage primaryStage) {
         try {
