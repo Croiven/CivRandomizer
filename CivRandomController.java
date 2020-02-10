@@ -14,7 +14,7 @@ import java.util.Set;
  * @author Joonas
  * @version 3.3.2018
  * Ohjelma arpoo 1-8 pelaajalle kaksi kansaa Sid Meier's Civilization VI peliin.
- * Tämä tiedosto on javaFX:llä toteutetun ohjelman controlleri.
+ * Tï¿½mï¿½ tiedosto on javaFX:llï¿½ toteutetun ohjelman controlleri.
  */
 public class CivRandomController {
 	
@@ -77,8 +77,8 @@ public class CivRandomController {
 	 */
 	public static final Random gen = new Random();  
 	/**
-	 * Aliohjelma joka arpoo lukuja välille 1-maxRange niin, että sama luku ei toistu. Kopioitu aliohjelma.
-	 * @param n on määrä montako arvotaan.
+	 * Aliohjelma joka arpoo lukuja vï¿½lille 1-maxRange niin, ettï¿½ sama luku ei toistu. Kopioitu aliohjelma.
+	 * @param n on mï¿½ï¿½rï¿½ montako arvotaan.
 	 * @param maxRange maksimi arvolle.
 	 * @return palauttaa taulukon arvottuja lukuja.
 	 */
@@ -114,7 +114,7 @@ public class CivRandomController {
 	}
 	
 	/**
-	 * Arpoo ainoastaan Rise and Fall lisäosan kansoista.
+	 * Arpoo ainoastaan Rise and Fall lisï¿½osan kansoista.
 	 */
 	public void arvontaRF() {  
 	    int t = 0;  
@@ -129,7 +129,7 @@ public class CivRandomController {
     
     /**
      * Aliohjelma suorittaa toiminnat kun painetaan "arvo" nappia.
-     * Sisältää tulostuksen.
+     * Sisï¿½ltï¿½ï¿½ tulostuksen.
      */
     private void arvo() {
     	arvontaKaikki();
@@ -165,6 +165,6 @@ public class CivRandomController {
     
     
     
-    	}
+    }
 
 }
